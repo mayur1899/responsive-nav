@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" class="font-barlow">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Responsive Tailwind Nav</title>
+</head>
+<body>
+    <header class="header flex items-center justify-between bg-blue-200 p-3">
+        <div class="logo">
+            <h1 class="text-4xl font-bold italic text-white bg-black px-5">M-LEARN</h1>
+        </div>
+
+        <nav class="nav-con flex justify-center items-center ease-in-out">
+            <ul class="nav-ul flex gap-8 text-xl font-bold text-amber-500 ease-in-out duration-[0.4s] flex-col absolute top-[0%] left-[-100%] bg-blue-200 text-center justify-center items-center w-full h-screen lg:flex-row lg:static lg:w-auto lg:h-auto">
+                <li class="nav-list-link"><a href="#" class="nav-link">HOME</a></li>
+                <li class="nav-list-link"><a href="#" class="nav-link">CONTACT</a></li>
+                <li class="nav-list-link"><a href="#" class="nav-link">ABOUT</a></li>
+                <li class="nav-list-link"><a href="#" class="nav-link">GALLERY</a></li>
+                <li class="nav-list-link"><a href="#" class="nav-link">SERVICES</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu-btn cursor-pointer lg:hidden">
+            <ion-icon name="menu-outline" class="nav-icon text-5xl"></ion-icon>
+        </div>
+    </header>
+</body>
+<script src="script.js"></script>
+</html>
